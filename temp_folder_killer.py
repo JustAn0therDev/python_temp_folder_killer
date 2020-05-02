@@ -22,7 +22,7 @@ def main():
                 os.remove(file)
                 total_deleted += 1
             except Exception as exception_message:
-                print("Can't delete file " + file + " because of the following error: " + str(exception_message) + ". Going for the next one.")
+                print(f"Can't delete file {str(file)} because of the following error: {str(exception_message)}. Going for the next one.")
 
         print(f'Finished. Total of files/directories: {str(total)} | Total of deleted files/directories: {str(total_deleted)}')
     else:
