@@ -1,6 +1,5 @@
 import os
 import glob
-import admin
 
 def main():
     total_of_deleted_files = 0
@@ -17,13 +16,11 @@ def main():
     if (user_response.lower() == 'y'):
         print('Deleting files...')
         for file in list_of_files_in_directory:
-            if not admin.isUserAdmin():
-                admin.runAsAdmin()
             try:
                 os.remove(file)
                 total_of_deleted_files += 1
-            except Exception:
-                print("Can't delete file " + file + ". Going for the next one.")
+            except Exception as exception_message:
+                print("Can't delete file " + file + " because of the following error: " + str(exception_message) + ". Going for the next one.")
         
         print('Finished. Total of files: ' + str(total_files)  + ' | Total of deleted files: ' + str(total_of_deleted_files))
     else:
