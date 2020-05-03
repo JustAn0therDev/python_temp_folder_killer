@@ -9,14 +9,7 @@ def main():
     list_of_files_and_directories = glob.glob(PATH_TO_TEMP_FOLDER, recursive=True)
     total = len(list_of_files_and_directories)
 
-    user_response = input('Do you want to see all temporary files/directories? (y - Y/n - N or any other character): ').lower()
-
-    if (user_response == 'y'):
-        print('Ok, this is the list of files currently: \n')
-        for file in list_of_files_and_directories:
-            print(f'{file}\n')
-
-    user_response = input('Do you want to delete all of these files? (y - Y/n - N or any other character): ').lower()
+    user_response = input('Do you want to delete all files in the current temp folder? (y - Y/n - N or any other character): ').lower()
 
     if (user_response == 'y'):
         print('Deleting files...\n')
