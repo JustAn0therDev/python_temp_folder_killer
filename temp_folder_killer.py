@@ -25,7 +25,7 @@ def temp_folder_killer():
                     Fore.RED)
 
         print_message_with_color(
-            f'Finished. Total of files/directories: {str(total)} | Total of deleted files/directories: {str(total_deleted)}',
+            f'Finished. Total of files/directories: {str(total)} | Total of deleted files/directories: {str(total_files_deleted)}',
             Fore.GREEN)
     else:
         print("Ok, I won't do anything to it.")
