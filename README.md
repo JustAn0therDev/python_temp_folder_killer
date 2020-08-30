@@ -1,9 +1,9 @@
 # python_temp_folder_killer
-Simple python program to delete the contents inside the Windows temporary folder.
+Simple python program to delete the contents inside the "temp" Windows folder.
 
 ## Notes
 
-It was made to delete the temp folder on my computer because that's something I need to do often and manually. The admin.py file that can be found in previous commits was not made entirely by me and can be found [in this StackOverflow answer](https://stackoverflow.com/questions/19672352/how-to-run-python-script-with-elevated-privilege-on-windows).
+It was made to delete the temp folder on my computer because that's something I need to do often and manually, since there are some applications that (incorrectly) use the folder to store logs and such. The admin.py file that can be found in previous commits was not made entirely by me and can be found [in this StackOverflow answer](https://stackoverflow.com/questions/19672352/how-to-run-python-script-with-elevated-privilege-on-windows).
 
 I adapted the script mentioned above to Python 3 so I could use it in the context I needed. 
 
