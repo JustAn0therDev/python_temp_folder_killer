@@ -1,5 +1,5 @@
 # python_temp_folder_killer
-Simple python program to delete the contents inside the windows temp folder.
+Simple python program to delete the contents inside the Windows temporary folder.
 
 ## Notes
 
